@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.fire {
+  background-color: #ff3939;
+}
+
+.pd {
+  background-color: #3284ff;
+}
+
+.med {
+  background-color: #4aff4a;
+}
+
+.svu {
+  background-color: #a23eff;
+}
+
+.justice {
+  background-color: #ff8431;
+}
+
+.fbi {
+  background-color: #505050;
+}
+
+.other {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.visto {
+  background-color: #111 !important;
+  color: #ccc !important;
+}
+
+.viendo {
+  outline: 3px solid gold;
+  animation: resaltar 0.7s ease-in-out;
+  height: 80px; /* Aumenta el alto */
+  font-size: 1.2em;
+}
+
+#episodeTable td:nth-child(2), #episodeTable th:nth-child(2) {
+  text-align: center;
+}
+
+@keyframes resaltar {
+  from { outline-color: transparent; }
+  to { outline-color: gold; }
+}
+
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+table, th, td {
+  border: 1px solid #555;
+}
+
+tr:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+button {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#btnTop:hover {
+  background-color: #555;
+}
